@@ -1,0 +1,16 @@
+[
+  {
+    "firstname": "John",
+    "lastname": "Perez",
+    "username": "John",
+    "password": "4f1133a4ab693860a9d34a785b596af43f059468f04a10d6bb4ce7ca868c60ee",
+    "salt": "yGy\u0005g0������\u0006�txZP���oU;��-�e\u0013B�}�D�\u0017P�)�ǒ�\u0006>��p�٣��ϸ\u0014� !�U�IIAg\u0014�>K�$#���N���)xԉ\u0015��\u001b$��Os�|��\u0016B��B��Hla`.ۖ�NH����dn����"
+  },
+  {
+    "firstname": "Matias",
+    "lastname": "Merlo",
+    "username": "Mati",
+    "password": "4b30ba1320d12fbd18dce2b58f3f8ebb94827ceb8df635267ee47544fafb3830",
+    "salt": "/r\t�\u001a�ɶ �8G\u0007��I�e]�4�\u0005�X�\u0001\b�@T'sy\u0004.#��iƙ\u0001���m�䒇d\u0005>\u0016�CC��&��>�\u0004]��Ee]��m��y�\u0010G(\t�\flC�vh��\u001d���}=¿+ޣy�U�c]aP�;��\u0017P�u�ԡ{���"
+  }
+]
