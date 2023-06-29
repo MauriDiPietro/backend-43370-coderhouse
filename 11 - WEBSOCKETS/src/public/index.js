@@ -1,0 +1,1 @@
+const socketClient = io();
