@@ -38,6 +38,8 @@ socketServer.on('connection', (socket) => {
         console.log(message);
     })
 
+    socketServer.emit('arrayProducts', products);
+    
     socket.on('newProduct', (obj) =>{
         products.push(obj);
         socketServer.emit('arrayProducts', products);
