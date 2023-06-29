@@ -3,7 +3,6 @@ import { __dirname } from './utils.js';
 import { Server } from 'socket.io';
 import handlebars from 'express-handlebars';
 
-
 const app = express();
 
 app.use(express.json());
@@ -24,6 +23,8 @@ console.log('🚀 Server listening on port 8080');
 
 const socketServer = new Server(httpServer);
 
+const products = [];
+
 socketServer.on('connection', (socket) => {
     console.log(`Usuario conectado: ${socket.id}`);
 
@@ -31,5 +32,14 @@ socketServer.on('connection', (socket) => {
         console.log('Usuario desconectado');
     })
 
-    socket.emit
+    socket.emit('saludoDesdeBack', 'Bienvenido a websocket')
+
+    socket.on('respuestaDesdeFront', (message)=>{
+        console.log(message);
+    })
+
+    socket.on('newProduct', (obj) =>{
+        products.push(obj);
+        socketServer.emit('arrayProducts', products);
+    })
 })
