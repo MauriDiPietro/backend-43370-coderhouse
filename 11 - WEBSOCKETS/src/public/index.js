@@ -25,3 +25,7 @@ socketClient.on('arrayProducts', (array)=>{
     })
     products.innerHTML = infoProducts
 })
+
+socketClient.on('message', (msg)=>{
+   console.log(msg)
+})

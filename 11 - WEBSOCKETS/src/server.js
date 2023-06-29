@@ -44,4 +44,11 @@ socketServer.on('connection', (socket) => {
         products.push(obj);
         socketServer.emit('arrayProducts', products);
     })
+
+    //emit desde ruta post
+    app.post('/', (req, res) => {
+        const { message } = req.body;
+        socketServer.emit('message', message);
+        res.send('se envió mensaje al socket del cliente');
+    });
 })
