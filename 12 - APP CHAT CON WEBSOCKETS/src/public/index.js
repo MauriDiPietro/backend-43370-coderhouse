@@ -31,6 +31,7 @@ btn.addEventListener('click', ()=>{
 })
 
 socket.on('messages', (arrayMsgs)=>{
+    actions.innerHTML = ''
     const chatRender = arrayMsgs.map((msg)=>{
         return `<p><strong>${msg.username}</strong>: ${msg.message}</p>`
     }).join(' ')
@@ -39,4 +40,26 @@ socket.on('messages', (arrayMsgs)=>{
 
 socket.on('msg', (msg)=>{
     console.log(msg);
+})
+
+socket.on('newUser', (user) => {
+    Toastify({
+        text: `🟢 ${user} is logged in`,
+        duration: 3000,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        // onClick: function(){} // Callback after click
+      }).showToast();
+})
+
+message.addEventListener('keypress', ()=>{
+    socket.emit('chat:typing', username)
+})
+
+socket.on('chat:typing', (user)=>{
+    actions.innerHTML = `<p>${user} is writing a message...</p>`
 })

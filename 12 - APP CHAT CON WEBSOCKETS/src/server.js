@@ -45,4 +45,12 @@ socketServer.on('connection', async(socket)=>{
     })
 
     socket.emit('msg', 'bienvenido al chat');
+
+    socket.on('newUser', (user)=>{
+        socket.broadcast.emit('newUser', user); //llega a todos, menos al que inició sesión
+    })
+
+    socket.on('chat:typing', (user)=>{
+        socket.broadcast.emit('chat:typing', user)
+    })
 })
