@@ -1,10 +1,11 @@
 import ProductDaoMongoDB from "../daos/mongodb/product.dao.js";
 const prodDao = new ProductDaoMongoDB();
 
+// import { __dirname } from "../utils.js";
 // import ProductDaoFS from "../daos/filesystem/product.dao.js";
-// const prodDao = new ProductDaoFS();
+// const prodDao = new ProductDaoFS(__dirname+'/daos/filesystem/products.json');
 
-export const getAllService = async () => {
+export const getAll = async () => {
     try {
         const response = await prodDao.getAll();
         return response;
@@ -13,7 +14,7 @@ export const getAllService = async () => {
     }
 }
 
-export const getByIdService = async (id) => {
+export const getById = async (id) => {
     try {
         const item = await prodDao.getById(id);
         if(!item) return false;
@@ -23,7 +24,7 @@ export const getByIdService = async (id) => {
     }
 }
 
-export const createService = async (obj) => {
+export const create = async (obj) => {
     try {
        const newProd = await prodDao.create(obj);
        if (!newProd) return false;
@@ -33,7 +34,7 @@ export const createService = async (obj) => {
     }
 }
 
-export const updateService = async (id, obj) => {
+export const update = async (id, obj) => {
     try {
         const item = await prodDao.update(id, obj);
         return item;
@@ -42,7 +43,7 @@ export const updateService = async (id, obj) => {
     }
 }
 
-export const deleteService = async (id) => {
+export const remove = async (id) => {
     try {
         const item = await prodDao.delete(id);
         return item;
