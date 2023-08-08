@@ -7,6 +7,8 @@ import './db/dbConfig.js'
 import { errorHandler } from './middlewares/errorHandler.js'
 import passport from 'passport';
 import './passport/local-strategy.js';
+import './passport/github-strategy.js';
+import './passport/google-strategy.js'
 
 const app = express()
 
@@ -22,9 +24,9 @@ app.use(passport.session());
 
 app.use('/users', usersRouter);
   
-app.use(errorHandler)
+app.use(errorHandler);
   
-const PORT = 8088
+const PORT = 8080
 app.listen(PORT, () => {
   console.log(`Escuchando al puerto ${PORT}`)
 })
