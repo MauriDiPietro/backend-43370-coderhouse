@@ -22,6 +22,7 @@ passport.use('jwt', new jwtStrategy(strategyOptions, verifyToken));
 /* ------------------------------------ - ----------------------------------- */
 const cookieExtractor = (req) => {
     const token = req.cookies.token;
+    console.log('cookie---->', token);
     return token;
 }
 
