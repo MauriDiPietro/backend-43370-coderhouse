@@ -1,6 +1,6 @@
 import UserDao from "../daos/user.dao.js";
-import { generateToken } from "../jwt/auth.js";
 const userDao = new UserDao();
+import { generateToken } from "../jwt/auth.js";
 
 export const register = async (req, res, next) => {
   try {
@@ -22,7 +22,9 @@ export const login = async (req, res, next) => {
   try {
     const { email, password } = req.body;
     const user = await userDao.loginUser({ email, password });
-    if (!user) res.json({ msg: "invalid credentials" });
+    if (!user) {
+      res.json({ msg: "invalid credentials" });
+    }
     const access_token = generateToken(user);
     res
       .header("Authorization", access_token)
@@ -32,7 +34,7 @@ export const login = async (req, res, next) => {
   }
 };
 
-export const privateEndpoint = (req, res) => {
+export const privateRoute = async (req, res) => {
   const { first_name, last_name, email, role } = req.user;
   res.json({
     status: "success",
@@ -44,3 +46,20 @@ export const privateEndpoint = (req, res) => {
     },
   });
 };
+
+export const loginFront = async (req, res, next) => {
+  try {
+    const { email, password } = req.body;
+    const user = await userDao.loginUser({ email, password });
+    if (!user) {
+      res.json({ msg: "invalid credentials" });
+    }
+    const access_token = generateToken(user);
+    res
+        .cookie('token', access_token, { httpOnly: true })
+        .json({ msg: "Login OK", access_token });
+  } catch (error) {
+    next(error);
+  }
+};
+

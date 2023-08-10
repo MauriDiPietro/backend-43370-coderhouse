@@ -8,6 +8,7 @@ export const checkAuth = async (req, res, next) => {
     const authHeader = req.get("Authorization");
     if (!authHeader) res.status(401).json({ msg: "Unauthorized" });
     // Bearer +sd6f56+sdf5sd6+f5s+d6f5sd+fsdf+sdf
+    console.log(authHeader);
     const token = authHeader.split(" ")[1];
     const decode = jwt.verify(token, PRIVATE_KEY);
     const user = await userDao.getById(decode.userId);
@@ -15,6 +16,6 @@ export const checkAuth = async (req, res, next) => {
     req.user = user;
     next();
   } catch (error) {
-    console.log(error);
+    next(error.message);
   }
 };

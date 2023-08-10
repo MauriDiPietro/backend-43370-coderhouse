@@ -1,3 +1,5 @@
+// npm i express-openid-connect
+
 import express from 'express';
 import { auth } from 'express-openid-connect';
 import routerAuth0 from './routes/index.js'
