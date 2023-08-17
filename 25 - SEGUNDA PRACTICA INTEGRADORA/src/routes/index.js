@@ -1,11 +1,26 @@
 import { Router } from "express";
-const router = Router();
 
 import productRouter from './product.router.js';
 import userRouter from './user.router.js';
 
-router.use('/products', productRouter);
-router.use('/users', userRouter);
+export default class MainRouter {
+    constructor() {
+        this.router = Router();
+        this.initRoutes();
+    }
 
-export default router;
+    initRoutes() {
+        this.router.use('/products', productRouter);
+        this.router.use('/users', userRouter);
+    }
+
+    getRouter() {
+        return this.router;
+    }
+}; 
+
+
+
+
+
 

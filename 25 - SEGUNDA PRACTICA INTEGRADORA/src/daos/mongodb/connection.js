@@ -1,8 +1,9 @@
-import mongoose from "mongoose";
+import { connect } from "mongoose";
+import 'dotenv/config';
 
 try {
-  await mongoose.connect(
-    'mongodb://localhost:27017/coderhouse'
+  await connect(
+    process.env.MONGO_LOCAL_URL
   );
   console.log("Conectado a la base de datos de MongoDB");
 } catch (error) {
