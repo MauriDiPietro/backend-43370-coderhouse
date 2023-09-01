@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon ./server.js"
+  },
+  "name": "sql-sequelize",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
