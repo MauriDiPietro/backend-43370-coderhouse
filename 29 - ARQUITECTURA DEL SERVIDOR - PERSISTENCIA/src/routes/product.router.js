@@ -8,6 +8,7 @@ router
       .get('/', controller.getAll)
       .get('/dto/:id', controller.getByIdDTO)
       .get('/no-dto/:id', controller.getById)
+      .post('/dto', controller.createProdDTO)
       .post('/', controller.create)
       .put('/:id', controller.update)
       .delete('/:id', controller.delete)  

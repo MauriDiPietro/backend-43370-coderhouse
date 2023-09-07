@@ -18,4 +18,14 @@ export default class ProductService extends Services {
             console.log(error);
         }
     }
+
+    createProdDTO = async (obj) => {
+        try {
+          const newItem = await prodRepository.createProdDTO(obj);
+          if (!newItem) return false;
+          else return newItem;
+        } catch (error) {
+          console.log(error);
+        }
+    };
 };

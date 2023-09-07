@@ -22,4 +22,14 @@ export default class ProductController extends Controllers {
       next(error.message);
     }
   }
+
+  createProdDTO = async (req, res, next) => {
+    try {
+      const newItem = await productService.createProdDTO(req.body);
+      if (!newItem) createResponse(res, 404, {method: 'create', error: "Validation error!"});
+      else createResponse(res, 200, newItem);
+    } catch (error) {
+      next(error.message);
+    }
+  };
 }
