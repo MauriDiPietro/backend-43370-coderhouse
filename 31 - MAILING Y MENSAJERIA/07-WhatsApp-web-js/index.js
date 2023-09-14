@@ -19,6 +19,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    console.log(message);
 	if(message.body === 'hola') {
 		client.sendMessage(message.from, 'Hola soy el bot de whatsapp');
 	}
