@@ -7,7 +7,7 @@ const PORT = 8080;
 
   app.get('/operacion-simple', (req, res) => {
     let sum = 0;
-    for (let i = 0; i < 10000; i++) {
+    for (let i = 0; i < 10; i++) {
       sum += i;
     }
     res.json({ sum });
@@ -16,7 +16,7 @@ const PORT = 8080;
 
   app.get('/operacion-compleja', (req, res) => {
     let sum = 0;
-    for (let i = 0; i < 5000000000; i++) {
+    for (let i = 0; i < 10000000000000; i++) {
       sum += i;
     }
     res.json({ sum });
