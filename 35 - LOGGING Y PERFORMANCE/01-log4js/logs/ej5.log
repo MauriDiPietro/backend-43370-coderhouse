@@ -1,0 +1,3 @@
+[2023-09-25T21:16:32.879] [WARN] prod - Imprimo warn
+[2023-09-25T21:16:32.882] [ERROR] prod - Imprimo error
+[2023-09-25T21:16:32.882] [FATAL] prod - Imprimo fatal
