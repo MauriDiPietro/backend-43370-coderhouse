@@ -1,0 +1,10 @@
+version: "2.20.3"
+services:
+  MONGO-DOCKER-2:
+    image: mongo
+    ports: 
+      - "27018:27017"
+    volumes:
+      - "/d/DOCKER-CODER:/data/db"
+
+# docker compose up -d
