@@ -1,0 +1,28 @@
+components:
+  parameters:
+    schemas:
+      BodyNewsPost:
+        type: object
+        required:
+          - title
+          - body
+          - author
+          - image
+        properties:
+          title:
+            type: string
+            description: Título de la noticia
+          body:
+            type: string
+            description: Cuerpo de la noticia
+          author:
+            type: string
+            description: Autor de la noticia
+          image:
+            type: string
+            description: Imagen de la noticia
+        example:
+          title: ¡Bajó el dólar en Argentina!
+          body: Inesperadamente bajó el valor del dólar.
+          author: Juancito Perez
+          image: http://sdfsdf.com/sdfsdf.jpg    

@@ -1,0 +1,63 @@
+paths:
+  /news:
+    post:
+      tags:
+      - News
+      summary: Registro de noticia nueva en base de datos.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/schemas/BodyNewsPost'
+        required: true
+      responses:
+        200:
+          description: Se registó la noticia correctamente.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/News/registerNew'
+        500:
+          description: Error de servidor
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/News/notFound'
+        404:
+          description: Error de validacion del schema.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/News/validationError'
+    get:
+      tags:
+      - News
+      summary: Lista de noticias
+      responses:
+        200: 
+          description: Lista de noticias
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/News/getAllNews'
+  /news/{id}:
+    get:
+      tags:
+      - News
+      summary: Buscar noticia por id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: id referente a la noticia.
+          schema:
+            type: string
+      responses:
+        200:
+          description: Noticia encontrada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/News/getNewById'
+    put:
+    delete:

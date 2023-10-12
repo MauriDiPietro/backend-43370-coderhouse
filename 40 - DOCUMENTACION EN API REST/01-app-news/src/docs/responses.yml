@@ -1,0 +1,107 @@
+components:
+  schema:
+    News:
+      registerNew:
+        type: object
+        properties:
+          id:
+            type: string
+            description: Id de la noticia.
+          title:
+            type: string
+            description: Título de la noticia.
+          body:
+            type: string
+            description: Cuerpo de la noticia.
+          author:
+            type: string
+            description: Autor de la noticia.
+          image:
+            type: string
+            description: Imagen de la noticia.
+        example:
+          id: sdfsdf423-5ertert-3453-345erg
+          title: ¡Bajó el dólar en Argentina!
+          body: Inesperadamente bajó el valor del dólar.
+          author: Juancito Perez
+          image: http://sdfsdf.com/sdfsdf.jpg
+      getAllNews:
+        type: array
+        items:
+          properties:
+            id:
+              type: string
+              description: Id de la noticia.
+              example: sdfsdf423-5ertert-3453-345erg
+            title:
+              type: string
+              description: Título de la noticia.
+              example: ¡Bajó el dólar en Argentina!
+            body:
+              type: string
+              description: Cuerpo de la noticia.
+              example: Inesperadamente bajó el valor del dólar.
+            author:
+              type: string
+              description: Autor de la noticia.
+              example: Juancito Perez
+            image:
+              type: string
+              description: Imagen de la noticia.
+              image: http://sdfsdf.com/sdfsdf.jpg
+            date:
+              type: date
+              description: Fecha de publicación de la noticia.  
+              example: 11/10/2023    
+      validationError:
+        type: object
+        properties:
+          msg: 
+            type: string
+            description: Error de validacion de schema
+        example:
+          msg: Validation Schema error
+      notFound:
+        type: object
+        properties:
+          msg:
+            type: string
+            description: Error de servidor
+        example:
+          msg: Error de servidor
+      errorGetById:
+        type: object
+        properties:
+          msg:
+            type: string
+            description: Error de búsqueda por id
+        example:
+          msg: No se encontró el id ${id} en la base de datos.
+      getNewById:
+        type: object
+        properties:
+          id:
+            type: string
+            description: Id de la noticia.
+          title:
+            type: string
+            description: Título de la noticia.
+          body:
+            type: string
+            description: Cuerpo de la noticia.
+          author:
+            type: string
+            description: Autor de la noticia.
+          image:
+            type: string
+            description: Imagen de la noticia.
+          date:
+            type: date
+            description: Fecha de publicación de la noticia.      
+        example:
+          id: sdfsdf423-5ertert-3453-345erg
+          title: ¡Bajó el dólar en Argentina!
+          body: Inesperadamente bajó el valor del dólar.
+          author: Juancito Perez
+          image: http://sdfsdf.com/sdfsdf.jpg
+          date: 11/10/2023

@@ -1,0 +1,18 @@
+[2023-10-11T21:07:45.903] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-10-11T21:07:47.980] [INFO] default - Conectado a MongoDB!
+[2023-10-11T21:39:41.828] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-10-11T21:39:43.823] [INFO] default - Conectado a MongoDB!
+[2023-10-11T21:40:34.606] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-10-11T21:40:36.541] [INFO] default - Conectado a MongoDB!
+[2023-10-11T21:41:36.008] [INFO] default - POST /news
+[2023-10-11T21:43:00.870] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-10-11T21:43:02.884] [INFO] default - Conectado a MongoDB!
+[2023-10-11T21:45:12.094] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-10-11T21:45:14.088] [INFO] default - Conectado a MongoDB!
+[2023-10-11T21:45:40.998] [INFO] default - GET /news
+[2023-10-11T21:51:35.828] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-10-11T21:51:37.823] [INFO] default - Conectado a MongoDB!
+[2023-10-11T21:52:05.999] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-10-11T21:52:07.961] [INFO] default - Conectado a MongoDB!
+[2023-10-11T21:52:21.861] [INFO] default - GET /news
+[2023-10-11T21:52:56.359] [INFO] default - GET /news/64e545691e28b41d08d87b0a
