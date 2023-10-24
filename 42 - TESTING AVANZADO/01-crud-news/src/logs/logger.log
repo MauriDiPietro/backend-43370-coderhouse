@@ -1869,3 +1869,11 @@
 [2023-10-23T22:14:18.884] [INFO] default - POST /news
 [2023-10-23T22:14:18.906] [INFO] default - DELETE /news/id/65371a6a51be0b65825e49e5
 [2023-10-23T22:14:18.933] [INFO] default - GET /news/65371a6a51be0b65825e49e5
+[2023-10-23T22:21:15.228] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-10-23T22:21:15.294] [INFO] default - Conectado a MongoDB!
+[2023-10-23T22:21:23.783] [INFO] default - POST /news
+[2023-10-23T22:24:32.890] [INFO] default - POST /news
+[2023-10-23T22:30:06.389] [INFO] default - DELETE /news
+[2023-10-23T22:30:06.432] [INFO] default - POST /news
+[2023-10-23T22:30:06.452] [INFO] default - DELETE /news
+[2023-10-23T22:30:06.464] [INFO] default - GET /news
