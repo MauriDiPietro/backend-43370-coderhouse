@@ -8,9 +8,9 @@
     "start": "node ./src/server.js",
     "dev": "node --watch ./src/server.js",
     "test": "mocha --recursive",
-    "test:node": "node ./src/test/dao/test.js",
     "test:linux": "export NODE_OPTIONS=--experimental-vm-modules && npx jest /src/test/app",
     "test:win": "set NODE_OPTIONS=--experimental-vm-modules && npx jest /src/test/app/app.test.js",
+    "test:dao": "node ./src/test/dao/test.js",
     "test:api": "node ./src/test/app/test.js"
   },
   "keywords": [],

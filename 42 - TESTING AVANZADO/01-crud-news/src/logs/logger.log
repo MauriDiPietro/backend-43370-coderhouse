@@ -1877,3 +1877,141 @@
 [2023-10-23T22:30:06.432] [INFO] default - POST /news
 [2023-10-23T22:30:06.452] [INFO] default - DELETE /news
 [2023-10-23T22:30:06.464] [INFO] default - GET /news
+[2023-10-25T17:53:42.349] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-10-25T17:53:42.401] [INFO] default - Conectado a MongoDB!
+[2023-10-25T17:53:52.994] [INFO] default - Conectado a MongoDB!
+[2023-10-25T17:53:53.031] [INFO] default - se limpió base de datos
+[2023-10-25T17:53:53.111] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Interno Aplicaciones Asistente" }
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:517:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Interno Aplicaciones Asistente' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-10-25T17:53:53.131] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Interno Aplicaciones Asistente" }
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:517:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Interno Aplicaciones Asistente' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-10-25T17:53:53.147] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Interno Aplicaciones Asistente" }
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:517:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Interno Aplicaciones Asistente' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-10-25T17:55:27.428] [INFO] default - Conectado a MongoDB!
+[2023-10-25T17:55:27.462] [INFO] default - se limpió base de datos
+[2023-10-25T17:55:27.574] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "International Cuentas Productor" }
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:517:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'International Cuentas Productor' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-10-25T17:55:27.592] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "International Cuentas Productor" }
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:517:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'International Cuentas Productor' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-10-25T17:55:27.607] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "International Cuentas Productor" }
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:517:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\backend-43370-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'International Cuentas Productor' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-10-25T17:56:33.299] [INFO] default - DELETE /news
+[2023-10-25T17:56:33.803] [INFO] default - POST /news
+[2023-10-25T17:56:33.833] [INFO] default - DELETE /news
+[2023-10-25T17:56:33.842] [INFO] default - GET /news
+[2023-10-25T17:56:33.858] [INFO] default - DELETE /news
+[2023-10-25T17:56:33.871] [INFO] default - POST /news
+[2023-10-25T17:56:33.885] [INFO] default - GET /news/653981011fb0d046ebbc6010
+[2023-10-25T17:56:33.898] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-10-25T17:56:33.910] [INFO] default - DELETE /news
+[2023-10-25T17:56:33.923] [INFO] default - POST /news
+[2023-10-25T17:56:33.936] [INFO] default - PUT /news/653981011fb0d046ebbc6015
+[2023-10-25T17:56:33.960] [INFO] default - DELETE /news
+[2023-10-25T17:56:33.971] [INFO] default - POST /news
+[2023-10-25T17:56:33.981] [INFO] default - DELETE /news/id/653981011fb0d046ebbc601a
+[2023-10-25T17:56:33.997] [INFO] default - GET /news/653981011fb0d046ebbc601a
+[2023-10-25T20:43:51.988] [INFO] default - DELETE /news
+[2023-10-25T20:43:52.034] [INFO] default - POST /news
+[2023-10-25T20:43:52.070] [INFO] default - DELETE /news
+[2023-10-25T20:43:52.085] [INFO] default - GET /news
+[2023-10-25T20:43:52.115] [INFO] default - DELETE /news
+[2023-10-25T20:43:52.131] [INFO] default - POST /news
+[2023-10-25T20:43:52.159] [INFO] default - GET /news/6539a8381fb0d046ebbc6024
+[2023-10-25T20:43:52.171] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-10-25T20:43:52.184] [INFO] default - DELETE /news
+[2023-10-25T20:43:52.199] [INFO] default - POST /news
+[2023-10-25T20:43:52.212] [INFO] default - PUT /news/6539a8381fb0d046ebbc6029
+[2023-10-25T20:43:52.250] [INFO] default - DELETE /news
+[2023-10-25T20:43:52.263] [INFO] default - POST /news
+[2023-10-25T20:43:52.281] [INFO] default - DELETE /news/id/6539a8381fb0d046ebbc602e
+[2023-10-25T20:43:52.294] [INFO] default - GET /news/6539a8381fb0d046ebbc602e
