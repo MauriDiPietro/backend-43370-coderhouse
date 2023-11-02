@@ -1,0 +1,29 @@
+{
+  "name": "45---cuarta-practica-integradora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node .",
+    "dev": "nodemon ./src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.20",
+    "@types/joi": "^17.2.3",
+    "@types/log4js": "^2.3.5",
+    "@types/mongoose": "^5.11.97",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "log4js": "^6.9.1",
+    "mongoose": "^8.0.0"
+  }
+}
